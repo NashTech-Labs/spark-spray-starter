@@ -7,7 +7,8 @@ scalaVersion := "2.10.4"
 organization := "com.knoldus"
 
 libraryDependencies ++= Seq(
-                      "org.apache.spark"  %% "spark-core"      % "1.4.1",
+                      "org.apache.spark"  %% "spark-core"      % "1.4.1" % "provided",
+                      "com.typesafe.akka" %% "akka-actor" % "2.3.4",
 		              "io.spray"          %% "spray-can"       % "1.3.3",
 	                  "io.spray"          %% "spray-routing"   % "1.3.3"
 	                   )
